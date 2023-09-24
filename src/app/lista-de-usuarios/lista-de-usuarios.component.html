@@ -3,6 +3,6 @@
     [ngStyle]="{ backgroundColor: alumno.aprobado ? 'green' : 'grey' }"
     *ngFor="let alumno of alumnos"
   >
-    {{ alumno.nombre | uppercase }} - {{ alumno.fechaInscripcion | date }}
+    {{ alumno.nombre | uppercase }} -  {{ alumno.apellido | uppercase}} {{alumno.edad | number}} {{ alumno.fechaInscripcion | date }}
   </li>
 </ul>

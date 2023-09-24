@@ -11,7 +11,7 @@ export class ListaDeUsuariosComponent {
     { 
       nombre: 'Karen',
       apellido: 'Cavaller',
-      edad: 24,
+      edad: 33,
       fechaInscripcion: new Date(),
       aprobado: true,
     },
@@ -25,14 +25,14 @@ export class ListaDeUsuariosComponent {
     { 
       nombre: 'Dolores',
       apellido: 'Rodriguez',
-      edad: 24,
+      edad: 25,
       fechaInscripcion: new Date(),
       aprobado: true,
     },
     { 
       nombre: 'Federico',
     apellido: 'Villa Nueva',
-    edad: 24,
+    edad: 21,
     fechaInscripcion: new Date(),
     aprobado: false,
   },
