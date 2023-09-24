@@ -1,11 +1,41 @@
+/* Estilos para la lista */
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Altura mínima para ocupar toda la pantalla */
+}
+
 .lista-alumnos {
-    list-style: none; 
-    padding: 0; 
-    margin: 0; 
-  }
-  
-  .lista-alumnos li {
-    background-color: inherit; 
-    margin-bottom: 10px;
-    padding: 10px; 
-  }
+  list-style: none;
+  padding: 0;
+}
+
+/* Estilos para cada elemento de la lista */
+.lista-alumnos li {
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves para cambio de color y zoom */
+}
+
+/* Estilos para alumnos aprobados */
+.lista-alumnos li.aprobado {
+  background-color: green;
+  color: white;
+}
+
+/* Estilos para alumnos reprobados */
+.lista-alumnos li.reprobado {
+  background-color: grey;
+  color: white;
+}
+
+/* Estilos hover para todos los elementos */
+.lista-alumnos li:hover {
+  background-color: #ccc; /* Color de fondo cuando se pasa el cursor */
+  color: black; /* Color del texto cuando se pasa el cursor */
+  transform: scale(1.1); /* Aplicar un pequeño zoom (10%) cuando se pasa el cursor */
+}

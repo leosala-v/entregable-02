@@ -12,6 +12,7 @@ import { ListaDeUsuariosComponent } from './lista-de-usuarios/lista-de-usuarios.
   declarations: [AppComponent, RoundedBlockDirective, DraggableDirective, ListaDeUsuariosComponent],
   imports: [BrowserModule, FormsModule],
   providers: [],
+  bootstrap: [AppComponent],
 
 })
 export class AppModule {}
